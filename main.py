@@ -3,13 +3,13 @@ from god import app as score_input_app
 from history import app as game_history_app
 
 pages = {
-    "Add Game": score_input_app,
-    "Game History": game_history_app
+    "Game History": game_history_app,
+    "Add Game": score_input_app    
 }
 
 # Initialize session_state for page if not set
 if "page" not in st.session_state:
-    st.session_state.page = "Add Game"
+    st.session_state.page = "Game History"
 
 st.sidebar.title("Godfather")
 
